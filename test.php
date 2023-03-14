@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gbk">
+    <title>排他布局</title>
+    <style>
+         *{
+		 	margin:0;
+		 	padding:0;
+			}
+		#title{
+			width:100px;
+			height:116px;
+		}
+		#banner{
+			height:482px;
+			width:100%;
+			margin:0 auto;
+			background-image:url(桥梁图片/02.jpg);
+			text-align:center;
+			}
+		#title{
+			background-image:none;
+			}
+        .hd{
+			height:50px;
+            width:100%;
+            margin:0px auto;
+            cursor:pointer;
+			color:black;
+			background-color:#666666;
+			background-image:none;
+			text-align:center;
+            }
+        .hd span{
+			line-height:50px;
+            font-size:30px;
+            padding:0 60px;
+            background-color:#CCCCCC;
+           }
+       .hd span.dj{background-color:#4B6BA0;
+	   				margin:0px;}/*点击后span变颜色*/
+        .bd{width:1115px;
+            height:500px;
+            margin:0 auto;
+			background-image:none;
+            }
+        ul{list-style:none;}
+         .bd li{
+             height:510px;
+             background-color:#FFFFFF;
+             display:none;
+			 background-image:none;
+         }
+        .bd li.ddj{display:block;}
+		.left{width:30%;
+			height:500px;
+			float:left;
+			}
+		.right{width:40%;
+			height:500px;
+			float:left;
+			}
+		.middle{
+			width:40%;
+			height:500px;
+			float:left;
+			}
+		.info{
+			height:185px;
+			width:410px;
+			}
+		.sentup{
+			height:200px;
+			width:410px;
+			}
+		#pic{
+			height:400px;
+			width:600px;
+			float:right;
+			position:relative;
+		}
+		#pic p{
+			left:10px;
+			top:0px;
+			position:absolute;
+			color:red;
+			}
+    </style>
+
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312"></head>
+<body leftmargin="0" rightmargin="0">
+	<div  id="banner"><h1>智能材料设计系统</h1></div>
+    <div class="hd"><span class="dj" >背景介绍</span>
+		<span>参数计算</span>
+        <span>控制算法</span>
+        <span>控制测试</span>
+        <span>监控平台</span>    
+		</div>
+		
+    <div class="bd">
+        <ul>
+            <li class="ddj">
+			<p style="font-size:10px; color:red; text-align:left; width:750px; margin:auto;">智能材料——MFC</p>
+			<p style="width:750px; margin:auto;">智能材料与结构是一种新型的高科技技术，也是一门综合科学，它涉及材料、力学、物理、化学、电子、控制等多个学科。智能材料与结构的应用前景非常广阔，有望在航空、航天、舰船、自动控制等领域得到广泛的应用。MFC压电纤维复合材料就是一种新型的压电智能材料<br>
+传统的压电陶瓷片材料存在许多缺陷。例如：容易出现脆性断裂，在处理和焊接时需要特别小心，无法应用于应变较大的场合。在长期使用过程中，压电陶瓷内部容易出现微小裂纹，可靠性降低，且很难粘贴在表面弯曲的结构上。压电陶瓷片的这些缺点也限制了压电陶瓷的广泛应用。鉴于这样的原因，MFC压电纤维复合材料应运而生，通过将压电陶瓷材料与其它结构材料的优异特性复合的方式，形成一个整体的执行器或传感器，弥补了单层压电陶瓷片的不足。基于压电复合材料的优势，MFC也得到了广泛的应用。</p>
+			<embed src="桥梁图片/jieshao.jpg" style=" margin-left:180px; margin-right:182.5px;"></embed>
+			<p style="width:750px; margin:auto;">MFC压电复合材料是将压电陶瓷材料和柔性聚合物按一定的连通方式、一定的体积或重量比例以及一定的空间几何分布制成的材料，两种材料的复合可以使其优势互补，获得既具有较强压电特性，同时又具有良好韧性的综合性能优异的压电材料。压电复合材料不仅可以解决传统技术中难于解决的问题，而且其作用也是其他材料难以取代的。</p>
+			<p style="font-size:10px; color:red; width:333px; margin-left:182.5px;">病害分类</p>
+			<p style=" margin-left:182.5px;"><strong>桥身</strong></p>
+			<p style="width:750px; margin-left:182.5px;">随着当前社会交通量不断增加，对道路的重复作用程度越来越大，汽车荷载虽尚未达到路桥所承受的最大承载值，但是会使路面出现疲劳和变形积累现象，例如超限车辆过多，桥面混凝土在汽车超限作用下，疲劳应力幅度过大，桥面板发生开裂；裂缝即使在荷载卸除后虽然能够闭合，但由于超限车辆通过频繁，裂缝逐渐明显，上部混凝土结构内部受到损伤，构件的开裂弯矩降低、刚度下降。
+在循环荷载尤其是多次重复荷载作用下,桥梁收缩徐变会变得更大。<br>
+桥面板经常处于振动变形中，由于在砼材料内部存在局部缺陷或不均匀性在荷载作用下会发生应力集中而出现微裂纹。重复荷载反复作用一定次数后导致破坏，使砼出现疲劳裂缝。<br>
+主梁是道路桥梁力学的主要承担者，一般情况下，车辆重量的压迫长期积累就会形成主梁裂缝，严重就会形成主梁变形，在保证道路桥梁使用寿命的前提下，属正常现象。但是裂缝的产生是内部的钢筋与雨水、空气接触，产生钢筋锈蚀危害，同时使砼强度降低。
+			<p style=" margin-left:182.5px;"><strong>拉索</strong></p>
+			<p style="width:750px; margin:auto;">剧烈的振动不仅会产生弯曲附加应力而引起拉索疲劳损伤，而且会损坏索的钢套筒、套筒帽及其固定螺栓、拉索的防振阻尼器及索的护套。经常发生的异常振动会加剧斜拉索根部护筒疲劳开裂，使拉索根部积水，加速拉索锈蚀，缩短其使用寿命。</p>
+			<p style="font-size:10px; color:red; text-align:left; margin-left:182.5px;">实际案例</p>
+			<p style="width:750px; margin:auto;">2018年8月14日，意大利热那亚莫兰迪公路桥发生垮塌事故，造成数十人死伤。</p>
+			<embed src="桥梁图片/12.png" style=" margin-left:180px; margin-right:182.5px;"></embed>
+			<p style="width:750px; margin:auto;">桥梁垮塌原因分析：2018年8月14日，意大利热那亚遭受暴分雨袭击，强风暴雨天气致使斜拉索异常振动，同时因为大桥处于近海环境，桥梁的钢筋长期暴露在外，直接造成了硫化物和氯化物的腐蚀，致使钢筋锈蚀，大桥承载力降低，造成了此次惨案。</p>
+			</li>
+            <li>
+			<div id="pic"><br><br><br>
+			</div>
+			 <form name="num" action="" method="post" ><br>
+			 <p>MFC压电材料参数计算</p>
+			<div class="info"><p>&nbsp;制动长度a=
+			  <input type="text" id="a"  value="请输入a的值"onfocus="this.value=''"/ > m
+			</p>
+			<p>&nbsp;制动宽度b=
+			  <input type="text" id="b" value="请输入b的值" onFocus="this.value=''" / > m
+			</p>
+			<p>&nbsp;是否需要改变其余变量的值
+			  <input name="checkbox" type="checkbox" id="Check" onClick="check()" value="1"/  />
+			</p>
+			<br>
+			<span id="add">&nbsp;<br><br><br></span>
+			<br>
+			</div>
+			<div class="sentup"><p><input name="submit" type="button" align="right"  onclick="getnumber()" value="确认提交"/>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+			<span id="pid"></span>
+	</div>		
+		  </form>
+		  
+		  <script>
+					function getnumber(){
+						var a = document.getElementById("a").value;
+						var b = document.getElementById("b").value;
+						var check=document.forms["num"].Check;
+						var add=document.getElementById("add");
+						var v=null;
+						var H=null;
+						var h=null;
+						if(isNaN(a)||isNaN(b)||a==0||b==0){
+							alert("请正确输入a或b的值！");
+							
+							return false;
+						}
+						if(check.checked){
+							v=document.getElementById("textfield").value;
+							H=document.getElementById("textfield1").value;
+							h=document.getElementById("textfield2").value;
+							v=Number(v);
+							H=Number(H);
+							h=Number(h);
+						}
+						else {
+							add.innerHTML="";
+							v=0.31;
+							H=0.002;                   
+							h=0.0003; 
+						}
+						const Efx=30336000000;
+						const Efz=30336000000;
+						const Ep=93000000000;    
+						const L=0.5*H;
+						const t=0.00038;     
+						const d33=0.0000000004;
+						const d31=0.0000000002;
+						const u=1500;
+						const U=Efx*h/(1-v*v)+Ep*H/(1-v*v);     
+						const efx=d33*u/t;
+						const efz=d31*u/t;      
+						const A=Efz*((L+h)*(L+h)-L*L)/(2*(1-v*v));
+						const B=Efz*h/(1-v*v);
+						const C=A*Efx/Efz;
+						const D=B*Efx/Efz;
+						const P=Efz*((L+h)*(L+h)*(L+h)-L*L*L)/(3*(1-v*v))+Ep*((H-L)*(H-L)*(H-L)+L*L*L)/(3*(1-v*v));
+						const Q=Efz*((L+h)*(L+h)-L*L)/(2*(1-v*v))+Ep*(L*L-(H-L)*(H-L))/(2*(1-v*v));
+						const R=Efz*h/(1-v*v)+Ep*H/(1-v*v);
+						const S=Efx*((L+h)*(L+h)*(L+h)-L*L*L)/(3*(1-v*v))+Ep*((H-L)*(H-L)*(H-L)+L*L*L)/(3*(1-v*v));
+						const T=Efx*((L+h)*(L+h)-L*L)/(2*(1-v*v))+Ep*(L*L-(H-L)*(H-L))/(2*(1-v*v));
+						const Fx1=Ep*H*(2*C*T-2*D*S+(H-2*L)*(C*U-D*T)*(efx+v*efz))/(2*516.164*(T*T-S*U)*(1-v*v));
+						const Fx=Fx1*b;						
+						const Fz1=Ep*H*(2*Q*A-2*B*P+(H-2*L)*(A*R-B*Q))*(efz+v*efx)/(2*(Q*Q-P*R)*(1-v*v));
+						const Fz=Fz1*a;
+						const Mx1=Ep*H*(efx+v*efz)*(2*(H*H-3*H*L+3*L*L)*(D*T-C*U)+3*(H-2*L)*(D*S-C*T))/(6*(T*T-S*U)*(1-v*v));
+						const Mx=Mx1*b;
+						const Mz1=Ep*H*(efz+v*efx)*(2*(H*H-3*H*L+3*L*L)*(Q*B-R*A)+3*(H-2*L)*(B*P-A*Q))/(6*(Q*Q-P*R)*(1-v*v));
+						const Mz=Mz1*a;
+						const Fx0=Fx.toFixed(2);
+						const K1=Fx/1500;
+						const N=a*b;
+						const ep=3336000000;
+						const t1=0.0005;
+						const ez=u/t1;
+						const F=ep*(d33)*N*ez*0.1;
+						const K2=F/1500;
+						const F0=F.toFixed(2);
+						const K10=K1.toFixed(4);
+						const K20=K2.toFixed(4);
+						var Pid=document.getElementById("pid");
+						var Pic=document.getElementById("pic");
+						var url="桥梁图片/picture.png";
+						var str="<img src="+url+">"+"<p><br><br><br><br>0.001</p>";
+						Pic.innerHTML=str;
+						Pid.innerHTML="理论作动力大小Fx="+Fx0+"N"+"<br>标化参数K1="+K10+"<br>实际预估作动力F="+F0+"N"+"<br>标化参数K2="+K20+"<br><br><br>"+"理论作动力——材料出厂作动力；<br>实际预估作动力——基于板理论简化传力机制为轴向传力；<br>标化参数——材料线性作动常数（K=F/1500）；<br>实际预估作动力适用梁板结构、拉索结构、薄膜结构。";
+					}
+					function check(){
+					var check=document.forms["num"].Check;
+					var add=document.getElementById("add");
+					if(check.checked){
+						add.innerHTML="&nbsp;请输入修改后泊松比的值&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type='text' id='textfield'/></br>&nbsp;请输入修改后受控板厚度的值 <input type='text' id='textfield1'/></br>&nbsp;请输入修改后MFC厚度的值&nbsp;&nbsp;&nbsp;  <input type='text' id='textfield2'/>";
+					}
+					else {
+						add.innerHTML="";
+					}
+					}
+			</script>
+		    </li>
+            <li><h2 style="text-align:center">控制算法</h2>
+			<p style="width:750px; margin:auto;">控制算法（The control algorithm）是在机电一体化中，在进行任何一个具体控制系统的分析、综合或设计时，首先应建立该系统的数学模型，确定其控制算法。在利用智能材料控制结构的过程中，选择合适的控制算法能够准确、有效的利用智能材料对结构进行制动。</p>
+			<embed src="桥梁图片/31.png" style=" margin-left:180px; margin-right:182.5px;"></embed>
+			<p style="width:750px; margin:auto;">------------------------------------------------------------------------------------------------------------</p>
+			<p style="width:750px; margin:auto;"><strong>设计系统适用负反馈控制、PID控制等主流控制算法。</strong></p>
+			<br>
+			<p style="width:750px; margin:auto;">·负反馈控制</p>
+			<p style="width:750px; margin:auto;">·负位移控制</p>
+			<embed src="桥梁图片/32.png" style=" margin-left:180px; margin-right:182.5px;"></embed>
+			<p style="width:750px; margin:auto;">·负速度控制</p>
+			<embed src="桥梁图片/33.png" style=" margin-left:180px; margin-right:182.5px;"></embed>
+			<p style="width:750px; margin:auto;">·负加速度控制</p>
+			<embed src="桥梁图片/34.png" style=" margin-left:180px; margin-right:182.5px;"></embed>
+			<p style="width:750px; margin:auto;">·负反馈控制对比</p>
+			<embed src="桥梁图片/35.png" style=" margin-left:180px; margin-right:182.5px;"></embed>
+			<br>
+			<br><br><br>
+			<p style="width:750px; margin:auto;">------------------------------------------------------------------------------------------------------------</p>
+			<br>
+			<br>
+			<input type="text" id="X"  value="请输入首波峰大小绝对值"onfocus="this.value=''" style="margin-left:182.5px; height:25px; color:black; width:180px;font-size:16px" / ></input>
+			<br>
+			<br>
+			<input id="GC" type="button" align="left" onClick="getGc()" value="提交" style="margin-left:182.5px; border-radius:100px; height:25px; color:black; width:60px; font-size:14px"></input>
+			<br>
+			<span id="getGc" style="margin-left:182.5px;"></span>
+			<br>
+			<br><br><br>
+			</li>
+			<script>
+				function getGc(){
+					var X = document.getElementById("X").value;
+					var getGc=document.getElementById("getGc");
+					const Gc=1500/X*1.0;
+					getGc.innerHTML="Gc="+Gc;
+				}
+			
+			</script>
+            <li>介绍3</li>
+            <li>介绍4</li>
+        </ul>
+    </div>
+
+    <script>
+        var oSpans=document.getElementsByClassName("hd")[0].getElementsByTagName("span");//获取span元素
+        var oLis=document.getElementsByClassName("bd")[0].getElementsByTagName("li");//获取li元素
+        for(var i=0;i<oSpans.length;i++){
+            oSpans[i].setAttribute("index",i); //定义自定义属性用来绑定对应顺序。点击之前把索引放在标签当中。
+            oSpans[i].onclick=function(){
+                for(var j=0;j<oSpans.length;j++){
+                    oSpans[j].removeAttribute("class"); }//把所有的span元素的class选择器删除。
+                this.className="dj";//当前点击的span标签添加class标签。
+                var numb=this.getAttribute("index");//获取索引
+                for(var k=0;k<oLis.length;k++){
+                    oLis[k].removeAttribute("class"); }//把所有的li元素的class选择器删除
+                oLis[numb].className="ddj";} }
+    </script>
+</body>
+</html>
